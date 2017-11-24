@@ -1,0 +1,23 @@
+Item No.,Description,Cause,State
+#PC0001,Add header to elasticsearch,Elasticsearch save json document unorderedly,Finished
+#PC0002,Add columns list for table preview and output CSV file,Add information/New request,Finished
+#PC0003,Revert categorical classify,Predict nummeric classes,Finished
+#PC0004,Add security for Web project,Require login to access protected resources,Finished
+#PC0005,Automatically choose fields from test data for predicting,Improvement,Finished
+#PC0006,Take X rows instead of collect all,reduce driver memory(in the case data is big),Finished
+#PC0007,Applying Kryo serialization,Spark performance tuning,Finished
+#PC0008,Change method for reading data from CSV format for MLP Classifier,Change to run,Finished
+#PC0009,Skip filtering to improve performance => Need to make sure about input data, To improve performance,Finished
+#PC0010,Revert to using the maximum value of classes +1, To Improve performance and limit "Java out of heap space",Finished
+#PC0011,Fix CSV separater/delimiter is comma,Bug,Finished
+#PC0012,Add global variable "algorithmName" to common java script, to detect exactly running algorithm,Finished
+#PC0013,Automatically choose the number of features and classes for MLP,request from SoJangNim,Finished
+#PC0014,Upgrade to Elasticsearch 6.0,Upgrade,Finished
+#PC0015,Add listener for DELETE-API - Elasticsearch,because delete is long operation so it's better if run asynchronously,Finished
+#PC0016,Add features selection (optional) to each algorithm,New requirement,Finished
+#PC0017,Integrate Hadoop, Distributed file system/Map reduce,Doing
+#PC0018,Add bootstrap switch button,UI for #PC0016,Finished
+#PC0019,Add LinearSVC with integrated "One vs. Rest" algorithm, For multiple classification,Finished
+#PC0020,Implement Logistic Regression for multiple classification, Add more algorithm,Finished
+#PC0021,Implement "Knowledge Flow", New function,
+#PC0022,Remove mapping type,Breaking change in Elasticsearch 6.0

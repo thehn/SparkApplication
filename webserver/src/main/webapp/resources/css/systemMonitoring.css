@@ -1,0 +1,119 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	margin: 0;
+	padding: 0;
+	background-color: #e8ebef;
+}
+* {
+	box-sizing: border-box;
+}
+*:focus {
+	outline: none;
+}
+fieldset, img, abbr, acronym {
+	border: 0 none;
+}
+.clear {
+	clear: both;
+}
+/* -----------------------------------------------------------------------------*/
+.header {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	background-image: url(../img/top_bg.jpg);
+}
+.outer {
+	width: 100%;
+	padding: 10px;
+}
+.panel_all {
+	width: 1260px;
+	height: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+.panel_01 {
+	width: 416px;
+	height: 150px;
+	float: left;
+	margin-right: 5px;
+	background-image: url(../img/panel_01.jpg);
+}
+.panel_02 {
+	width: 418px;
+	height: 150px;
+	float: left;
+	margin-right: 5px;
+	background-image: url(../img/panel_02.jpg);
+}
+.panel_03 {
+	width: 416px;
+	height: 150px;
+	float: left;
+	background-image: url(../img/panel_03.jpg);
+}
+.panel_04 {
+	width: 416px;
+	height: 230px;
+	float: left;
+	margin-top: 5px;
+	margin-right: 5px;
+	background-image: url(../img/panel_04.jpg);
+}
+.panel_05 {
+	width: 418px;
+	height: 230px;
+	float: left;
+	margin-top: 5px;
+	margin-right: 5px;
+	background-image: url(../img/panel_05.jpg);
+}
+.panel_06 {
+	width: 416px;
+	height: 230px;
+	float: left;
+	margin-top: 5px;
+	background-image: url(../img/panel_06.jpg);
+}
+.panel_07 {
+	width: 628px;
+	height: 330px;
+	float: left;
+	margin-top: 5px;
+	margin-right: 5px;
+	background-image: url(../img/panel_07.jpg);
+}
+.panel_08 {
+	width: 627px;
+	height: 330px;
+	float: left;
+	margin-top: 5px;
+	background-image: url(../img/panel_08.jpg);
+}
+.panel_09 {
+	width: 1260px;
+	height: 420px;
+	margin-top: 5px;
+	background-image: url(../img/panel_09.jpg);
+}
+.panel_10 {
+	width: 628px;
+	height: 370px;
+	float: left;
+	margin-top: 5px;
+	margin-right: 5px;
+	background-image: url(../img/panel_10.jpg);
+}
+.panel_11 {
+	width: 627px;
+	height: 370px;
+	float: left;
+	margin-top: 5px;
+	background-image: url(../img/panel_11.jpg);
+}
+.blank {
+	width: 100%;
+	height: 20px;
+}

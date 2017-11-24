@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>kr.gaion.ceh</groupId>
+	<artifactId>ml</artifactId>
+	<packaging>war</packaging>
+	<version>1.0</version>
+	<name>ml</name>
+	<url>http://maven.apache.org</url>
+	<dependencies>
+		<!-- include common project, "scope" must be set "run time" -->
+		<dependency>
+			<groupId>kr.gaion.ceh</groupId>
+			<artifactId>common</artifactId>
+			<version>1</version>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- Google json -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.2</version>
+		</dependency>
+
+		<!-- Servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<!-- Spring Framework -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>4.3.9.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>4.3.9.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.3.9.RELEASE</version>
+		</dependency>
+		<!-- Spring security -->
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>4.2.3.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>4.2.3.RELEASE</version>
+		</dependency>
+		<!-- to hash password -->
+		<!-- <dependency> <groupId>org.springframework.security</groupId> <artifactId>spring-security-crypto</artifactId> 
+			<version>4.2.2.RELEASE</version> </dependency> -->
+
+		<!-- To upload file -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+		<!-- to output log -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.8.0-alpha2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.8.0-alpha2</version>
+		</dependency>
+		<!-- Elasticsearch Transport Client -->
+		<dependency>
+			<groupId>org.elasticsearch.client</groupId>
+			<artifactId>transport</artifactId>
+			<version>6.0.0</version>
+		</dependency>
+		<!-- log for Elasticsearch -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.9.1</version>
+		</dependency>
+		<!-- Korean morpheme analysis -->
+		<dependency>
+			<groupId>kr.bydelta</groupId>
+			<artifactId>koalanlp-core_2.12</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>kr.bydelta</groupId>
+			<artifactId>koalanlp-kkma_2.12</artifactId>
+			<version>1.5.2</version>
+			<classifier>assembly</classifier>
+		</dependency>
+		<dependency>
+			<groupId>kr.bydelta</groupId>
+			<artifactId>koalanlp-twitter_2.12</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+
+		<!-- <dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-core-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency> -->
+		<!-- Apache common collection to use bidiMap -->
+		<!-- <dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.1</version>
+		</dependency> -->
+		
+		<!-- https://mvnrepository.com/artifact/org.fusesource/sigar -->
+		<dependency>
+		    <groupId>org.fusesource</groupId>
+		    <artifactId>sigar</artifactId>
+		    <version>1.6.4</version>
+		</dependency>
+		
+
+	</dependencies>
+
+	<build>
+		<finalName>ml</finalName>
+		<!-- to build war file -->
+		<plugins>
+			<!-- For using lambda expression -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.7.0</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.2.0</version>
+				<!-- This setting uses on my computer only (The) -->
+				<configuration>
+					<outputDirectory>D:\Dev\Web-server\apache-tomcat-9.0.0.M21\webapps\</outputDirectory>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
